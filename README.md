@@ -6,22 +6,33 @@ always the `.tex` file and the compiled output stays in sync.
 
 ## Structure
 
-- `main.tex` — the resume source (based on [Jake Gutierrez's template](https://github.com/sb2nov/resume), MIT).
+- `_preamble.tex` — shared formatting, packages and custom commands.
+- `resume-es.tex` — Spanish content (`\input`s the preamble).
+- `resume-en.tex` — English content (`\input`s the preamble).
+
+Formatting lives in one place (`_preamble.tex`); each language file holds
+only its content. Change a margin once, both PDFs update.
+
+Based on [Jake Gutierrez's template](https://github.com/sb2nov/resume) (MIT).
 
 ## Building locally
 
 You need a LaTeX distribution (TeX Live, MiKTeX) with `pdflatex`:
 
 ```bash
-pdflatex main.tex
+pdflatex resume-es.tex   # -> resume-es.pdf
+pdflatex resume-en.tex   # -> resume-en.pdf
 ```
-
-This produces `main.pdf`.
 
 ## Continuous build
 
-Every push to `main` triggers a GitHub Actions workflow that compiles
-`main.tex` and publishes the resulting `main.pdf` as a build artifact.
+Every push to `main` triggers a GitHub Actions workflow that compiles both
+`resume-es.tex` and `resume-en.tex` and publishes `resume-es.pdf` and
+`resume-en.pdf` as assets of a GitHub Release, giving each a stable URL:
+
+```
+https://github.com/Alex-Huaracha/resume/releases/latest/download/resume-en.pdf
+```
 
 ## License
 
