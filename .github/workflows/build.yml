@@ -1,0 +1,33 @@
+name: Build resume
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile Spanish Resume
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume-es.tex
+
+      - name: Compile English Resume
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume-en.tex
+
+      - name: Publish PDFs to release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          files: |
+            resume-es.pdf
+            resume-en.pdf
