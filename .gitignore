@@ -1,0 +1,23 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Compiled output (built by CI)
+*.pdf
+
+# Windows "Mark of the Web" NTFS streams (WSL artifacts)
+*:Zone.Identifier
+
+# Editor / OS junk
+.DS_Store
+*.swp
+
+# Agent tooling (local only)
+.atl/

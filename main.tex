@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Alex Huaracha} \\ \vspace{1pt}
+    \small
+    \href{mailto:x@x.com}{\underline{alexhuarachaq@gmail.com}} 
+    $|$ 
+    \href{http://linkedin.com/in/alex-huaracha}{\underline{linkedin.com/in/alex-huaracha}} $|$
+    \href{http://github.com/Alex-Huaracha}{\underline{github.com/Alex-Huaracha}}
+    $|$
+    \href{https://alexhuaracha.vercel.app/}{\underline{alexhuaracha.vercel.app/}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experiencia Laboral}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Desarrollador de Software Full Stack}{Ene 2026 -- Presente}
+      {Transportes Hagemsa S.A.}{Arequipa, AQP}
+      \resumeItemListStart
+        \resumeItem{Diseñé un \textbf{backend centralizado (Java/Spring Boot)} que unificó la gestión de mantenimiento vehicular, consumido por dos apps \textbf{Flutter} (HG Track y Supman) con \textbf{+100 usuarios activos} y arquitectura offline-first.}
+        \resumeItem{Mejoré un sistema financiero de caja (\textbf{Hono.js, React, MySQL}) agregando \textbf{pruebas de integración con Vitest y Testcontainers}, reportes dinámicos y comunicación en tiempo real vía WebSockets.}
+        \resumeItem{Diseñé e implementé un prototipo de autenticación \textbf{multi-tenant} para microservicios con \textbf{Nest.js, Prisma y JWT}, incluyendo OAuth2, RBAC granular y refresh token rotation, validado con \textbf{tests e2e}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Asistente de Investigación en Inteligencia Artificial }{May 2025 -- Ene 2026}
+      {Universidad Nacional de San Agustin}{Arequipa, AQP}
+      \resumeItemListStart
+        \resumeItem{Construí pipelines de datos escalables con \textbf{Python, TensorFlow y Pandas}, procesando más de \textbf{32 millones de registros GPS} para el sistema de transporte.}
+        \resumeItem{Diseñé modelos de Deep Learning (\textbf{LSTM Autoencoders}) para detección de anomalías, logrando una \textbf{mejora del 53.7\%} frente a métodos tradicionales.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Pasante de Desarrollo Backend}{Ago 2024 -- Jul 2025}
+      {Universidad Nacional de San Agustin}{Arequipa, AQP}
+      \resumeItemListStart
+        \resumeItem{Construí una API REST con \textbf{+20 endpoints} y un esquema de base de datos \textbf{multi-tenant} para una plataforma SaaS de ingeniería de requisitos, permitiendo a múltiples organizaciones gestionar proyectos de forma aislada con \textbf{Node.js, TypeScript, PostgreSQL y Prisma ORM}.}
+        \resumeItem{Implementé autenticación \textbf{JWT} y \textbf{RBAC jerárquico} con 4 niveles de permisos (administrador, dueño de organización, líder de proyecto, miembro), asegurando el aislamiento de datos sensibles entre organizaciones.}
+        \resumeItem{Desarrollé módulos de generación automática de documentos (\textbf{PDF y Excel}) y gestión de evidencias con subida de archivos, automatizando el ciclo de vida de requisitos de software para equipos de desarrollo.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Proyectos}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Plataforma E-commerce de Microservicios} $|$ \emph{Node.js, TypeScript, Docker, Redis}}{Jul 2025 -- Nov 2025}
+          \resumeItemListStart
+            \resumeItem{Diseñé una arquitectura de microservicios escalable y containerizada con \textbf{Docker}, orquestando servicios tras un API Gateway unificado.}
+            \resumeItem{Implementé el procesamiento asíncrono de tareas de alto rendimiento utilizando una arquitectura orientada a eventos con \textbf{Redis y Bull Queues}.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Sistema SaaS de Gestión de Gimnasios} $|$ \emph{Java, Spring Boot, PostgreSQL, Docker}}{Dic 2025 -- Feb 2026}
+          \resumeItemListStart
+            \resumeItem{Arquitecté el backend con Spring Boot 3 y Java, implementando patrones de diseño (DTO, Repository) y transacciones \textbf{ACID} para asegurar la integridad en la gestión de membresías y accesos.}
+            \resumeItem{Desarrollé un módulo de \textbf{Business Intelligence} utilizando consultas \textbf{SQL nativas} y JPQL optimizadas para calcular \textbf{KPIs} financieros y visualizar tendencias de afluencia en tiempo real.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Educación}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad Nacional de San Agustin}{Ago 2020 -- Jul 2025}
+      {Bachiller en Ingeniería de Sistemas}{Arequipa, AQP}
+      \resumeItemListStart
+        \resumeItem{Cursos: Práctica de Ingeniería de Software, Machine Learning aplicado, Sistemas Operativos, Arquitectura de Computadoras, Programación basada en modelos, Algoritmos y Estructuras de Datos, Bases de datos.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {The Odin Project - Open Source }{Ago 2025 -- Dic 2025}
+      {Full Stack Developer}{Remote}
+        \resumeItemListStart
+            \resumeItem{Completé +1000 horas de desarrollo práctico construyendo aplicaciones full stack desde cero con \textbf{Node.js, React y PostgreSQL}, aplicando \textbf{TDD} y diseño de APIs RESTful.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Habilidades técnicas}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Lenguajes}{: TypeScript, Python, Java, SQL (Postgres), JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Next.js, Node.js, Nest.js, Spring Boot, Flutter, Hono, FastAPI, Vitest, TensorFlow, Pandas, ORM} \\
+     \textbf{Herramientas}{: Git, Docker, Testcontainers, Redis, MySQL, Postman, JIRA, AWS, Azure} \\
+     \textbf{Idiomas}{: Español (Nativo), Inglés (B2 - Upper Intermediate)} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
