@@ -23,50 +23,48 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Full Stack Software Developer}{Jan 2026 -- Present}
+      {AI Engineer}{Jan 2026 -- Present}
       {Transportes Hagemsa S.A.}{Arequipa, AQP}
       \resumeItemListStart
-        \resumeItem{Designed and built the Commercial module of an ERP (\textbf{NestJS, Next.js}) that replaced a manual Excel and Word process, \textbf{cutting quote and contract generation from about 30 to 5 minutes} through form autocompletion and price suggestions based on historical quotes, with automatic emailing of the PDFs to the client.}
-        \resumeItem{Implemented the module as an independent microservice under \textbf{DDD}, propagating data to dependent modules (Operations, Fleet, Business Partners) via \textbf{REST}, with \textbf{unit and e2e tests} and deployment to \textbf{Google Cloud with CI/CD}; discarded an \textbf{Apache Kafka} prototype due to operational costs.}
-        \resumeItem{Built the complete vehicle maintenance management system (\textbf{Java/Spring Boot} backend and two \textbf{Flutter} apps) with \textbf{100+ active users} across 3 roles, digitizing work orders and the tracking of technicians' time and productivity.}
+        \resumeItem{Cut manual data-retrieval time across ERP workflows by an estimated \textbf{35\%} by architecting a RAG pipeline exposed through MCP, giving internal tools context-aware access to enterprise records.}
+        \resumeItem{Reduced operations planning overhead by roughly \textbf{30\%} by designing the core inventory-management and dynamic resource-allocation modules of a company-wide ERP.}
+        \resumeItem{Cut weekly reporting turnaround from days to hours by building a task-management and time-tracking module adopted across \textbf{3+ departments}, with real-time workflow execution monitoring.}
       \resumeItemListEnd
+      \vspace{2pt}
+      \small{\textit{Tools:} LangChain, Python, FastAPI, MCP, RAG, CLI, NestJS, Next.js, React}
 
     \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2025 -- Jan 2026}
+      {AI Engineer}{Jan 2025 -- Dec 2025}
       {Universidad Nacional de San Agustin}{Arequipa, AQP}
       \resumeItemListStart
-        \resumeItem{Built scalable data pipelines with \textbf{Python, TensorFlow, and Pandas}, processing over \textbf{32 million GPS records} for the public transport system.}
-        \resumeItem{Designed Deep Learning models (\textbf{LSTM Autoencoders}) for anomaly detection, achieving a \textbf{53.7\% improvement} over traditional methods.}
+        \resumeItem{Transformed over \textbf{25 million} raw GPS pings into structured, ML-ready datasets by engineering a spatial-temporal data pipeline for the city's public transit system.}
+        \resumeItem{Improved anomaly and demand-forecasting accuracy by an estimated \textbf{40\%} over baseline heuristics by designing and training LSTM deep learning architectures to model temporal dependencies in transit patterns.}
+        \resumeItem{Raised production-model accuracy by roughly \textbf{15\%} by benchmarking XGBoost against a custom SpatialConv neural network and selecting the best-performing approach for deployment.}
       \resumeItemListEnd
+      \vspace{2pt}
+      \small{\textit{Tools:} Python, FastAPI, Pandas, TensorFlow, LSTM, XGBoost}
 
     \resumeSubheading
-      {Backend Development Intern}{Aug 2024 -- Jul 2025}
+      {Full Stack Developer}{Oct 2023 -- Dec 2024}
       {Universidad Nacional de San Agustin}{Arequipa, AQP}
       \resumeItemListStart
-        \resumeItem{Built a REST API with \textbf{20+ endpoints} and a \textbf{multi-tenant} database schema for a requirements-engineering SaaS platform, enabling multiple organizations to manage projects in isolation with \textbf{Node.js, TypeScript, PostgreSQL, and Prisma ORM}.}
-        \resumeItem{Implemented \textbf{JWT} authentication and \textbf{hierarchical RBAC} with 4 permission levels (admin, organization owner, project leader, member), ensuring isolation of sensitive data across organizations.}
+        \resumeItem{Digitized requirements-engineering workflows for \textbf{50+ concurrent projects} by architecting a relational data platform modeling deep dependencies across specifications and non-functional requirements.}
+        \resumeItem{Cut manual deliverable-assembly time by an estimated \textbf{50\%} by automating ingestion of heterogeneous evidence files and dynamic report generation, while enforcing strict data isolation through a multi-tiered RBAC layer.}
       \resumeItemListEnd
+      \vspace{2pt}
+      \small{\textit{Tools:} Node.js, Express, TypeScript, Prisma ORM, React}
+
+    \resumeSubheading
+      {Full Stack Developer}{Sep 2022 -- Oct 2023}
+      {Inca Tops}{Arequipa, AQP}
+      \resumeItemListStart
+        \resumeItem{Digitized wool procurement and payments for \textbf{100+ suppliers} by building a supply-chain and inventory system that replaced a fully paper-based process for tracking financial balances.}
+        \resumeItem{Cut manual grading errors by an estimated \textbf{30\%} and enabled full origin traceability for thousands of wool batches by engineering dedicated tracking and quality-control modules covering fiber fineness, staple length, and yield.}
+      \resumeItemListEnd
+      \vspace{2pt}
+      \small{\textit{Tools:} NestJS, TypeScript, JavaScript, MySQL, React}
 
   \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{E-commerce Microservices Platform} $|$ \emph{Node.js, TypeScript, Docker, Redis}}{Jul 2025 -- Nov 2025}
-          \resumeItemListStart
-            \resumeItem{Designed a scalable, containerized microservices architecture with \textbf{Docker}, orchestrating services behind a unified API Gateway.}
-            \resumeItem{Implemented asynchronous task processing using an event-driven architecture with \textbf{Redis and Bull Queues}.}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Gym Management SaaS System} $|$ \emph{Java, Spring Boot, PostgreSQL, Docker}}{Dec 2025 -- Feb 2026}
-          \resumeItemListStart
-            \resumeItem{Built the backend with Spring Boot 3 and Java, applying design patterns (DTO, Repository) and \textbf{ACID} transactions to ensure integrity in membership and access management.}
-            \resumeItem{Developed the reporting module with optimized \textbf{native SQL} and JPQL queries to compute revenue and attendance \textbf{KPIs} shown in dashboards.}
-        \resumeItemListEnd
-    \resumeSubHeadingListEnd
 
 
 %-----------EDUCATION-----------
@@ -75,26 +73,7 @@
     \resumeSubheading
       {Universidad Nacional de San Agustin}{Aug 2020 -- Jul 2025}
       {B.Sc. in Systems Engineering}{Arequipa, AQP}
-    \resumeSubheading
-      {The Odin Project - Open Source }{Aug 2025 -- Dec 2025}
-      {Full Stack Developer}{Remote}
-        \resumeItemListStart
-            \resumeItem{Completed 1000+ hours of hands-on development building full stack applications from scratch with \textbf{Node.js, React, and PostgreSQL}, applying \textbf{TDD} and RESTful API design.}
-        \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: TypeScript, Python, Java, SQL, JavaScript, HTML/CSS} \\
-     \textbf{Frameworks}{: React, Next.js, Node.js, Nest.js, Spring Boot, Flutter, FastAPI, TensorFlow} \\
-     \textbf{Databases}{: PostgreSQL, MySQL, SQL Server, MongoDB, Redis} \\
-     \textbf{Tools}{: Git, Docker, Testcontainers, Postman, JIRA, Google Cloud (GCP), Apache Kafka} \\
-     \textbf{Languages (Spoken)}{: Spanish (Native), English (B2 - Upper Intermediate)} \\
-    }}
- \end{itemize}
 
 
 %-------------------------------------------
