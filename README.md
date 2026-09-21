@@ -17,12 +17,16 @@ Based on [Jake Gutierrez's template](https://github.com/sb2nov/resume) (MIT).
 
 ## Building locally
 
-You need a LaTeX distribution (TeX Live, MiKTeX) with `pdflatex`:
+Builds both `resume-es.pdf` and `resume-en.pdf` inside a container (Docker or
+Podman), so you don't need TeX Live installed on your machine and don't need
+to push to `main` just to see a compiled PDF:
 
 ```bash
-pdflatex resume-es.tex   # -> resume-es.pdf
-pdflatex resume-en.tex   # -> resume-en.pdf
+./build.sh
 ```
+
+The first run builds the image (downloads TeX Live packages); subsequent
+runs reuse it and just recompile.
 
 ## Continuous build
 
